@@ -85,7 +85,7 @@ int main()
 
 			//move back
             if (e.type == Event::MouseButtonReleased)
-				if (e.key.code == Mouse::Right)
+				if (e.mouseButton.button == Mouse::Right)
                   {
                     int n = moves.size();
 					if (n==0) continue;
@@ -94,7 +94,7 @@ int main()
                   }
 
    			if (e.type == Event::MouseButtonPressed)
-				if (e.key.code == Mouse::Left)
+				if (e.mouseButton.button == Mouse::Left)
                   for(int z=0;z<10;z++)
                    {
                      Vector2i pos = Mouse::getPosition(app) - Vector2i(30,0); // 30 - desk offset

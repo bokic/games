@@ -34,7 +34,7 @@ int main()
                 app.close();
 
    			if (e.type == Event::MouseButtonPressed)
-				if (e.key.code == Mouse::Left)
+				if (e.mouseButton.button == Mouse::Left)
                   {
                      Vector2i pos = Mouse::getPosition(app);
                      int x = pos.x/w + 1;
